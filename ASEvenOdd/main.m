@@ -7,26 +7,25 @@
 //
 
 #import <Foundation/Foundation.h>
-void evenodd(int n);
+void evenodd(int number);
 int main(int argc, const char * argv[]) {
     @autoreleasepool {
         // insert code here...
         int number;
-        printf("\n Enter your number");
+        printf("\n Enter your number:\n");
         scanf("%d",&number);
         evenodd(number);
     }
     return 0;
 }
 //function to find even odd
-void evenodd(int n)
+void evenodd(int number)
 {
-    int number;
-    if(number %2==0)
+    if(number %2 ==0)
     {
-        printf("Number is even");
+        printf("Number %d is even\n",number);
     }
     else{
-        printf("Number is odd");
+        printf("Number %d is odd\n",number);
     }
 }
